@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrom=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <title>document</title>
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h2>服务</h2><b>？</b>
+</header>
+<main>
+    <div class="banner swiper">
+        <div class="swiper-wrap">
+
+        </div>
+    </div>
+    <div class="listtop">
+        <h3><b></b>我的服务</h3>
+        <ul>
+            <li>
+                <img src="img/1.gif"><br>
+                <span>场景审核</span>
+            </li>
+            <li>
+                <img src="img/2.gif"><br>
+                <span>去尾页</span>
+            </li>
+            <li>
+                <img src="img/3.gif"><br>
+                <span>短信推广</span>
+            </li>
+            <li>
+                <img src="img/4.gif"><br>
+                <span>保障服务</span>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="img/5.gif"><br>
+                <span>红人点点</span>
+            </li>
+            <li>
+                <img src="img/6.gif"><br>
+                <span>秀场推广</span>
+            </li>
+        </ul>
+    </div>
+    <div class="listbot">
+        <h3><b></b>场景相关</h3>
+        <ul>
+            <li>
+                <img src="img/11.gif"><br>
+                <span>我的场景</span>
+            </li>
+            <li>
+                <img src="img/12.gif"><br>
+                <span>子账号场景</span>
+            </li>
+            <li>
+                <img src="img/13.gif"><br>
+                <span>字体商城</span>
+            </li>
+        </ul>
+    </div>
+</main>
+<footer>
+    <ul>
+        <li class="on">
+            <img src="img/21.gif"><br>
+            <span>创作</span>
+        </li>
+        <li>
+            <img src="img/22.gif"><br>
+            <span>服务</span>
+        </li>
+        <li>
+            <img src="img/23.gif"><br>
+            <span>我的</span>
+        </li>
+    </ul>
+</footer>
+</body>
+<script>
+    var html = document.documentElement;
+    html.style.fontSize = (html.clientWidth / 375 * 100) + "px";
+</script>
+<script src="swipers.js"></script>
+<script>
+    var data=[
+        {
+            "src":"img/ban.gif"
+        },
+        {
+            "src":"img/ban.gif"
+        },
+        {
+            "src":"img/ban.gif"
+        },
+        {
+            "src":"img/ban.gif"
+        }
+
+    ];
+    var target = document.querySelector('.swiper-wrap');
+    data.forEach(function (value,index) {
+        var div = document.createElement('div');
+        div.className = 'swiper-slide';
+        div.style.background='url('+value.src+')';
+        div.style.backgroundSize = '100% 100%';
+        target.appendChild(div)
+    });
+
+    new Swiper({
+        container: '.swiper',
+        autoPlay:2000
+    })
+</script>
+</html>

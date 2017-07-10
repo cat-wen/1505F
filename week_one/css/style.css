@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-direction: none;
+  color: #555; }
+
+li {
+  list-style: none; }
+
+.fr {
+  float: right; }
+
+.fl {
+  float: left; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-size: .16rem;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: .48rem;
+  background: url(../img/header.gif) no-repeat 100% 100%;
+  position: relative;
+  color: #fff; }
+  header h2 {
+    line-height: .48rem;
+    text-align: center;
+    font-size: .15rem; }
+  header b {
+    position: absolute;
+    right: .2rem;
+    top: .1rem;
+    line-height: .35rem;
+    text-align: center; }
+  header b:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: .25rem;
+    height: .25rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    right: -0.04rem;
+    text-align: center; }
+
+main {
+  width: 100%;
+  flex: 1;
+  flex-shrink: 0;
+  overflow: auto;
+  background: #F6F6F6; }
+  main .banner {
+    width: 100%; }
+  main h3 {
+    width: 100%;
+    line-height: .4rem;
+    font-size: .16rem;
+    color: #5c5c5c;
+    text-indent: 2em;
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #ccc; }
+    main h3 b {
+      position: absolute;
+      display: inline-block;
+      width: .05rem;
+      height: .16rem;
+      background: #f00;
+      left: 1em;
+      top: .13rem; }
+  main .listtop {
+    width: 100%;
+    background: #fff; }
+    main .listtop ul {
+      width: 100%;
+      display: flex;
+      color: #c5c5c5; }
+      main .listtop ul li {
+        width: 25%;
+        text-align: center;
+        font-size: .13rem;
+        padding: .2rem 0;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc; }
+        main .listtop ul li img {
+          width: 28%;
+          margin: 0 auto; }
+  main .listbot {
+    width: 100%;
+    background: #fff; }
+    main .listbot ul {
+      width: 100%;
+      display: flex;
+      color: #c5c5c5; }
+      main .listbot ul li {
+        width: 25%;
+        text-align: center;
+        font-size: .13rem;
+        padding: .2rem 0;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc; }
+        main .listbot ul li img {
+          width: 35%;
+          margin: 0 auto; }
+
+footer {
+  width: 100%;
+  height: .6rem;
+  background: #fff; }
+  footer ul {
+    width: 100%;
+    display: flex; }
+    footer ul li {
+      flex: 1;
+      text-align: center;
+      font-size: .13rem;
+      line-height: .1rem; }
+      footer ul li img {
+        width: 28%;
+        margin: 0 auto; }
+    footer ul .on {
+      color: #f00; }
+
+/*# sourceMappingURL=style.css.map */
